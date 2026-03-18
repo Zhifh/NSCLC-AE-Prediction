@@ -5,8 +5,12 @@ from catboost import CatBoostClassifier
 # 设置页面风格
 st.set_page_config(page_title="NSCLC AE Predictor", layout="centered")
 
-st.title("NSCLC Adverse Event Risk Calculator")
-st.markdown("This online tool predicts the risk of AEs based on clinical features.")
+st.title("NSCLC Grade ≥3 TRAE Risk Calculator")
+
+st.markdown("""
+This interactive tool is designed to predict the individual risk of 
+**Grade 3 or higher Treatment-Related Adverse Events (TRAE)** in patients with Non-Small Cell Lung Cancer (NSCLC).
+""")
 
 # 加载模型
 @st.cache_resource
