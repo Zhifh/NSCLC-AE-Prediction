@@ -49,10 +49,10 @@ if st.sidebar.button("Calculate Risk"):
     
     # 结果展示
     st.subheader("Results")
-   if prob >= 0.5:
-    st.error(f"Classification: HIGH RISK (Grade ≥3 TRAE)")
-else:
-    st.success(f"Classification: LOW RISK (Grade ≥3 TRAE)")
+    if prob >= 0.5:
+        st.error(f"Prediction: HIGH RISK (Grade ≥3 TRAE)")
+    else:
+        st.success(f"Prediction: LOW RISK (Grade ≥3 TRAE)")
     
     st.write(f"The predicted probability of Grade ≥3 TRAE is: **{prob*100:.2f}%**")
     st.progress(prob)
