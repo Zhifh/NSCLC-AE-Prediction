@@ -6,7 +6,7 @@ from catboost import CatBoostClassifier
 st.set_page_config(page_title="NSCLC AE Predictor", layout="centered")
 
 st.title("NSCLC Adverse Event Risk Calculator")
-st.markdown("This online tool predicts the risk of AEs based on 8 clinical features.")
+st.markdown("This online tool predicts the risk of ≥3 TRAEs based on 8  features.")
 
 # --- 加载模型 ---
 @st.cache_resource
