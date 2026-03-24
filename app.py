@@ -59,7 +59,7 @@ if st.sidebar.button("Calculate Risk"):
         
         with col1:
             st.write(f"Risk Score:")
-            st.title(f"{prob}")
+            st.title(f"{prob:.2f}")
             
         with col2:
             if prob >= 0.48:
