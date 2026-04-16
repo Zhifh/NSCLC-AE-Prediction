@@ -60,7 +60,7 @@ if st.sidebar.button("Calculate Risk"):
         col1, col2 = st.columns([1, 1])
         
         with col1:
-            st.metric(label="Calculated Risk Score", value=f"{prob:.2%}")
+            st.metric(label="Calculated Risk Score", value=f"{prob:.2f}")
             
         with col2:
             # 这里的阈值 0.48 你可以根据 7 因子模型的最佳 Cut-off 值进行调整
