@@ -14,7 +14,7 @@ st.markdown("This tool predicts the risk based on **7 key clinical features**.")
 def load_model():
     model = CatBoostClassifier()
     # 请确保你的新模型文件是以这 7 个特征训练的
-    model.load_model("catboost_ae_model_7.cbm") 
+    model.load_model("catboost_ae_model.cbm") 
     return model
 
 try:
