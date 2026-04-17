@@ -60,7 +60,7 @@ if st.sidebar.button("Calculate Risk"):
         col1, col2 = st.columns([1, 1])
         
         with col1:
-            st.metric(label="Calculated Risk Score", value=f"{prob:.2f}")
+            st.metric(label="Calculated Risk Score", value=f"{prob:.3f}")
             
         with col2:
             # 这里的阈值 0.48 你可以根据 7 因子模型的最佳 Cut-off 值进行调整
@@ -71,7 +71,7 @@ if st.sidebar.button("Calculate Risk"):
         
         # 视觉进度条
         st.progress(prob)
-        st.write(f"The probability of the patient experiencing Grade ≥3 TRAEs is **{prob*100:.1f}%**.")
+        st.write(f"The risk score is **{prob:.3f}**.")
         
     except Exception as e:
         st.error(f"Prediction Error: {e}")
