@@ -63,8 +63,8 @@ if st.sidebar.button("Calculate Risk"):
             st.metric(label="Calculated Risk Score", value=f"{prob:.3f}")
             
         with col2:
-            # 这里的阈值 0.48 你可以根据 7 因子模型的最佳 Cut-off 值进行调整
-            if prob >= 0.4114:
+            # 这里的阈值 0.4426
+            if prob >= 0.4426:
                 st.error("Prediction: **HIGH RISK**")
             else:
                 st.success("Prediction: **LOW RISK**")
